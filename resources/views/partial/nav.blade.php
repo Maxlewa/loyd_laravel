@@ -7,6 +7,7 @@
         <a href={{route('gallery')}}>gallery</a>
         <a href={{route('press')}}>press</a>
         <a href={{route('contact')}}>contact</a>
+        {{-- <a href={{route('links')}}>links</a> --}}
     </div>
     <div class="divNavRight">
         <a href="https://www.facebook.com/LoydBE/" target="_blank"><i class="fab fa-facebook-f"></i></a>

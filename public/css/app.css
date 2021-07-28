@@ -14649,28 +14649,22 @@ h3 {
 }
 nav {
   background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: solid 2px;
-  -o-border-image: linear-gradient(45deg, #ff0000 55%, #ffffff) 1;
-     border-image: linear-gradient(45deg, #ff0000 55%, #ffffff) 1;
-  margin-bottom: -2px;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
+  padding-top: 15px;
+  padding-bottom: 15px;
   top: 0;
   opacity: 0.9;
   transition: border-image opacity 1s;
   transition: border-image opacity 1s, -o-border-image opacity 1s;
   z-index: 10;
+  text-align: center;
 }
 nav .divNavLeft {
   display: flex;
   justify-content: space-between;
   width: 37%;
-  margin-left: 30px;
   font-size: 16px;
   text-align: center;
+  margin: auto;
 }
 nav .divNavLeft a {
   text-decoration: none;
@@ -14692,7 +14686,8 @@ nav .divNavRight {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
-  margin-right: 30px;
+  margin: auto;
+  margin-top: 20px;
 }
 nav .divNavRight i {
   color: white;
@@ -14741,9 +14736,6 @@ footer {
   background-color: black;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-top: solid 2px;
-  -o-border-image: linear-gradient(45deg, #ffffff, #ff0000 55%) 1;
-     border-image: linear-gradient(45deg, #ffffff, #ff0000 55%) 1;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -14803,14 +14795,14 @@ footer p {
 }
 
 .carouselBox {
-  width: 64% !important;
+  width: 53% !important;
   font-family: forum;
   font-size: 18px;
-  margin-bottom: 140px;
+  margin-bottom: 70px;
 }
 .carouselBox .carouselMain {
-  border: solid 2px #999999;
-  box-shadow: 0px 0px 20px #ffffff5b;
+  border: solid 4px #999999;
+  box-shadow: 0px 0px 30px #ffffff54;
 }
 .carouselBox .carouselMain div div p {
   margin-bottom: 8px;
@@ -14833,12 +14825,12 @@ footer p {
 
 .arrowC1 {
   font-size: 15px;
-  padding-top: 560px;
+  padding-top: 460px;
 }
 
 .arrowC2 {
   font-size: 15px;
-  padding-top: 560px;
+  padding-top: 460px;
 }
 
 .divTitre {
@@ -14925,9 +14917,6 @@ footer p {
   box-shadow: 0px 0px 20px #ff00005b;
 }
 
-.divHome {
-  height: 80vh;
-}
 .bigDiv {
   margin: 0 0 0 0 auto;
   max-width: 100%;
@@ -15034,6 +15023,43 @@ footer p {
 .bigDiv .divContactPLinks p {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.completeDiv {
+  margin-top: 40px;
+}
+.completeDiv .quatreDiv {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.completeDiv .quatreDiv div {
+  text-align: center;
+  margin: auto;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.completeDiv .quatreDiv div h2 {
+  color: #a8a8a8;
+  font-family: forum;
+  font-size: 16px;
+}
+.completeDiv .quatreDiv div h3 {
+  font-family: forum;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.completeDiv .quatreDiv div h3 a {
+  text-decoration: none;
+  color: red;
+}
+.completeDiv .quatreDiv div h3 a:hover {
+  transition: ease 0.4s;
+  text-shadow: 0px 6px 5px #ff0000;
 }
 
 html {

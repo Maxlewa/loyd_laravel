@@ -3,9 +3,9 @@
 @extends('layouts.index')
 
 @section('content')
-    <div class="divVideoContact text-center mt-5">
+    <div class="divVideoContact text-center mt-3">
         <video src={{asset('video/LoydRedMove.mp4')}} loop autoplay muted></video>
-        <form method="POST" action={{route('mailStore')}} role="form" class="formContact mt-2">
+        <form method="POST" action={{route('mailStore')}} role="form" class="formContact mt-4">
             @csrf
             <div class="form-row formContactLine">
                 <div class="d-flex justify-content-center form-group">
