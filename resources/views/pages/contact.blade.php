@@ -4,6 +4,14 @@
 
 @section('content')
     <div class="divVideoContact text-center mt-3">
+        <div class="divInfo">
+            <p class="my-1">
+                Contact/say hi : loydmusic@outlook.be
+            </p>
+            <p class="my-1">
+                Booking : Arnaud De Koninck - arnaud@progressbooking.be
+            </p>
+        </div>
         <video src={{asset('video/LoydRedMove.mp4')}} loop autoplay muted></video>
         <form method="POST" action={{route('mailStore')}} role="form" class="formContact mt-4">
             @csrf

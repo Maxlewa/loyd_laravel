@@ -1,7 +1,7 @@
 <nav>
     <div class="divNavLeft">
         <a href={{route('home')}}>home</a>
-        <a href={{route('discography')}}>discography</a>
+        <a href={{route('discography')}}>music</a>
         <a href={{route('nft')}}>nft</a>
         <a href={{route('tour')}}>tour</a>
         <a href={{route('gallery')}}>gallery</a>

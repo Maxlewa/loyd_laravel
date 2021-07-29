@@ -14648,9 +14648,9 @@ h3 {
   }
 }
 nav {
-  background-color: black;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   top: 0;
   opacity: 0.9;
   transition: border-image opacity 1s;
@@ -14687,7 +14687,7 @@ nav .divNavRight {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 nav .divNavRight i {
   color: white;
@@ -14701,8 +14701,13 @@ nav .divNavRight i:hover {
 
 .divVideoNft video {
   width: 100%;
-  border: solid 2px #999999;
-  box-shadow: 0px 0px 20px #ffffff5b;
+  border: solid 3px #999999;
+  transition: 0.3s;
+}
+.divVideoNft video:hover {
+  border: solid 3px red;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px #ff0000a4;
 }
 
 .divRightNft {
@@ -14733,7 +14738,6 @@ nav .divNavRight i:hover {
 
 footer {
   text-align: center;
-  background-color: black;
   padding-top: 15px;
   padding-bottom: 10px;
   position: absolute;
@@ -14762,6 +14766,9 @@ footer p {
 .divVideoContact {
   font-family: forum;
 }
+.divVideoContact .divInfo {
+  color: #ffffff7a;
+}
 .divVideoContact video {
   height: 50vh;
 }
@@ -14779,7 +14786,7 @@ footer p {
   border-radius: 0;
 }
 .divVideoContact .divContactP {
-  color: #ffffff5e;
+  color: #ffffff7a;
 }
 
 .joinBtn {
@@ -14843,7 +14850,7 @@ footer p {
 .divTitre .whiteLine {
   width: 100%;
   height: 1px;
-  background: linear-gradient(to left, #000000 30%, #ebf8e1, #000000 70%);
+  background: linear-gradient(to left, #000000 20%, #ebf8e1, #000000 80%);
 }
 
 .albumsDiv {
@@ -14904,17 +14911,38 @@ footer p {
 }
 
 .divSpotifyP {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
 }
 .divSpotifyP iframe {
-  outline: solid 2px white;
-  box-shadow: 0px 0px 20px #ffffff5b;
+  outline: solid 3px #999999;
   transition: 0.3s;
 }
 .divSpotifyP iframe:hover {
-  outline: solid 2px red;
+  outline: solid 3px red;
   transition: 0.3s;
-  box-shadow: 0px 0px 20px #ff00005b;
+  box-shadow: 0px 0px 20px #ff0000a4;
+}
+
+#bgvid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%) brightness(8%);
+  z-index: -30;
+}
+
+.divHome iframe {
+  border: solid 3px #999999;
+  transition: 0.3s;
+}
+.divHome iframe:hover {
+  border: solid 3px red;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px #ff0000a4;
 }
 
 .bigDiv {

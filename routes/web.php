@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/nft', [FrontController::class, 'nft'])->name('nft');
-Route::get('/discography', [FrontController::class, 'discography'])->name('discography');
+Route::get('/music', [FrontController::class, 'discography'])->name('discography');
 Route::get('/tour', [FrontController::class, 'tour'])->name('tour');
 Route::get('/contact', [FrontController::class, 'contact'])->name('contact');
 Route::get('/gallery', [FrontController::class, 'gallery'])->name('gallery');

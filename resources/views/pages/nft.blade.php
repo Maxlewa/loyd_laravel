@@ -3,6 +3,7 @@
 @extends('layouts.index')
 
 @section('content')
+    <video playsinline autoplay muted loop id="bgvid" src={{asset('video/tvstatic.mp4')}}></video>
     <div class="container nftContainer mt-5">
         <div class="row">
             <div class="col-6 divVideoNft">

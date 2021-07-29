@@ -3,11 +3,12 @@
 @extends('layouts.index')
 
 @section('content')
+    <video playsinline autoplay muted loop id="bgvid" src={{asset('video/tvstatic.mp4')}}></video>
     <div class="text-center divTitre mt-4">
-        <h1 class="titreDisco mb-3">ALBUMS</h1>
+        <h1 class="titreDisco mb-3">LISTEN</h1>
         <div class="whiteLine"></div>
     </div>
-    <div class="container albumsDiv mt-2">
+    {{-- <div class="container albumsDiv mt-2">
         <div class="row">
             <div class="col-6 text-center albumCol">
                 <div class="miniDiv text-center">
@@ -34,12 +35,12 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <div class="text-center mt-5 divSpotifyP">
+        <iframe src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="800" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
-    <div class="text-center mb-5 divSpotifyF">
+    <div class="text-center mb-5 divSpotifyF mt-5">
         <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6nTLSLkxAQp1F8L0VFvCpR?si=mpDTp8A3TpyYGYKiBUo0ig&size=detail&theme=dark" width="213" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-    </div>
-    <div class="text-center mt-2 divSpotifyP">
-        <iframe src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="600" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
 @endsection
 

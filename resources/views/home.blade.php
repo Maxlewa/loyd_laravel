@@ -3,6 +3,7 @@
 @extends('layouts.index')
 
 @section('content')
+    <video playsinline autoplay muted loop id="bgvid" src={{asset('video/tvstatic.mp4')}}></video>
     <div class="divHome text-center mt-2">
         {{-- <img src={{asset('img/PARDesktop.png')}} alt=""> --}}
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/ff3kpppd_MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
