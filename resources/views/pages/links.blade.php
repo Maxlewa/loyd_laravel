@@ -4,18 +4,6 @@
     <div class="bigDiv text-center mt-4">
         <video src={{asset('video/LoydRedMove.mp4')}} loop autoplay muted></video>
         <div class="btnDiv">
-            {{-- <a href="">
-                <button class="btn btn-dark mt-3">TICKETS - Reflektor, Liège - 25.11.2021</button>
-            </a>
-            <a href="">
-                <button class="btn btn-dark mt-3">TICKETS - Ancienne Belgique, Brussels - 26.11.2021</button>
-            </a>
-            <a href="">
-                <button class="btn btn-dark mt-3">TICKETS - Belvédère, Namur - 27.11.2021</button>
-            </a>
-            <a href="">
-                <button class="btn btn-dark mt-3">TICKETS - Entrepôt, Arlon - 28.11.2021</button>
-            </a> --}}
             <a href="">
                 <button class="btn btn-dark mt-3">STREAM Løyd's NEW single - "Save It"</button>
             </a>

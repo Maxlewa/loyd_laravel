@@ -1,52 +1,320 @@
-nav
-    // background-color: black
-    padding-top: 15px
-    padding-bottom: 10px
-    margin-bottom: 20px
-    top: 0
-    opacity: 0.9
-    transition: border-image opacity 1s
-    z-index: 10
-    text-align: center
-    .divNavLeft
-        display: flex
-        justify-content: space-between
-        width: 37%
-        font-size: 16px
-        // margin: auto
+.navDesktop
+    position: fixed
+    display: flex
+    height: 100vh
+    margin: 0
+    .navLeft
+        width: 35px
+        background-color: black
+        height: 100%
+        line-height: 100px
         text-align: center
-        margin: auto
-        a
-            text-decoration: none
-            padding-top: 3px
-            color: white
-            // font-family: aircord
+        display: table
+        h3
+            display: table-cell
+            vertical-align: middle
+            margin: auto
+            color: red
+            text-align: center
+            transform: rotate(270deg)
             font-family: forum
             font-size: 18px
-            text-transform: uppercase
-            transition: ease 0.4s
-            // text-shadow: 0px 2px 9px #ffffff
-        a:hover
-            color: red
-            text-decoration: none !important
-            transition: ease 0.4s
-            text-shadow: 0px 6px 5px #ff0000
-    .divNavRight
-        width: 17%
-        font-size: 20px
-        display: flex
-        justify-content: space-between
-        margin: auto
-        margin-top: 12px
-        i
-            color: white
-            transition: ease 0.4s
-        i:hover
-            color: red
-            transition: ease 0.4s
-            text-shadow: 0px 0px 5px #ff0000
+            text-shadow: 0px 0px 4px #ff0000
+    .navCenter
+        width: 35px
+        background-color: red
+        .navSocial
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            height: 250px
+            padding-top: 7px
+            a
+                text-decoration: none
+                padding-top: 5px
+                color: black
+                font-family: forum
+                font-size: 22px
+                text-transform: uppercase
+                text-align: center
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+            a:hover
+                color: white
+                text-shadow: 0px 0px 4px #b3b3b3
+    .navRight
+        width: 35px
+        background-color: black
+        box-shadow: 2px 0px 0px 0px white
+        text-align: center
+        .divMenu
+            position: absolute
+            bottom: 0
+            height: 90%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            width: 35px
+            a 
+                text-decoration: none
+                color: white
+                font-family: forum
+                transition: ease 0.4s
+                text-align: center
+                font-size: 19px
+                -webkit-writing-mode: vertical-lr
+                -moz-writing-mode: vertical-lr
+                -ms-writing-mode: vertical-lr
+                writing-mode: vertical-lr
+                transform: rotate(180deg)
+                width: 33px
+                riting-mode: tb
+                text-transform: uppercase
+                text-align: center
+                margin: 0
+                padding-top: 4px
+            a:hover
+                color: red
+                text-decoration: none !important
+                text-shadow: 0px 0px 4px #ff0000
+.navMobile
+    display: none
 
-// nav:hover
-//     border-image: linear-gradient(45deg, #ffffff 55%, #ff0000) 1
-    
-            
+// IPHONE to IPAD
+@media screen and (min-width: 300px) and (max-width: 767px)
+    .navDesktop
+        display: none
+    .navMobile
+        height: 90px
+        position: fixed
+        top: 0
+        margin: 0
+        display: block !important
+        width: 100%
+        border-bottom: red solid 2px
+        background-color: black
+        z-index: 3000
+        .navMobileIn
+            text-align: center
+            color: red
+            font-family: forum
+            margin-top: 10px
+            button
+                margin: auto
+                background: none
+                border: none
+                color: red
+                text-align: center
+                font-size: 22px !important
+        .navMobileSocial
+            text-align: center
+            a
+                text-decoration: none
+                color: white
+                font-family: forum
+                font-size: 18px
+                text-transform: uppercase
+                text-align: center
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+                padding-left: 10px
+                padding-right: 10px
+    .modal
+        display: none
+        position: fixed
+        padding-top: 45px
+        z-index: 1
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: auto
+        background-color: rgb(0,0,0)
+        background-color: rgba(0,0,0,0.4)
+        .modal-content
+            background-color: #000000
+            margin: 15% auto
+            padding: 20px
+            box-shadow: 0px 0px 20px #000000
+            width: 80%
+            height: 60%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            a
+                text-decoration: none
+                padding-top: 5px
+                color: red
+                font-family: forum
+                font-size: 22px
+                text-transform: uppercase
+                text-align: center
+                text-shadow: 0px 0px 4px #ff0000
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+            #pressModal
+                display: none
+
+// IPAD
+@media screen and (min-width: 768px) and (max-width: 769px)
+    .navDesktop
+        display: none
+    .navMobile
+        height: 90px
+        position: fixed
+        top: 0
+        margin: 0
+        display: block !important
+        width: 100%
+        border-bottom: red solid 2px
+        background-color: black
+        z-index: 3000
+        .navMobileIn
+            text-align: center
+            color: red
+            font-family: forum
+            margin-top: 10px
+            button
+                margin: auto
+                background: none
+                border: none
+                color: red
+                text-align: center
+                font-size: 22px !important
+        .navMobileSocial
+            text-align: center
+            a
+                text-decoration: none
+                color: white
+                font-family: forum
+                font-size: 18px
+                text-transform: uppercase
+                text-align: center
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+                padding-left: 10px
+                padding-right: 10px
+    .modal
+        display: none
+        position: fixed
+        padding-top: 45px
+        z-index: 1
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: auto
+        background-color: rgb(0,0,0)
+        background-color: rgba(0,0,0,0.4)
+        .modal-content
+            background-color: #000000
+            margin: 10% auto
+            padding: 20px
+            box-shadow: 0px 0px 20px #000000
+            width: 75%
+            height: 35%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            a
+                text-decoration: none
+                padding-top: 5px
+                color: red
+                font-family: forum
+                font-size: 22px
+                text-transform: uppercase
+                text-align: center
+                text-shadow: 0px 0px 4px #ff0000
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+            #pressModal
+                display: none
+
+// IPAD PRO
+@media screen and (min-width: 770px) and (max-width: 1025px)
+    .navDesktop
+        display: none
+    .navMobile
+        height: 90px
+        position: fixed
+        top: 0
+        margin: 0
+        display: block !important
+        width: 100%
+        border-bottom: red solid 2px
+        background-color: black
+        z-index: 3000
+        .navMobileIn
+            text-align: center
+            color: red
+            font-family: forum
+            margin-top: 10px
+            button
+                margin: auto
+                background: none
+                border: none
+                color: red
+                text-align: center
+                font-size: 22px !important
+        .navMobileSocial
+            text-align: center
+            a
+                text-decoration: none
+                color: white
+                font-family: forum
+                font-size: 18px
+                text-transform: uppercase
+                text-align: center
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+                padding-left: 15px
+                padding-right: 15px
+    .modal
+        display: none
+        position: fixed
+        padding-top: 45px
+        z-index: 1
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: auto
+        background-color: rgb(0,0,0)
+        background-color: rgba(0,0,0,0.4)
+        .modal-content
+            background-color: #000000
+            margin: 10% auto
+            padding: 20px
+            box-shadow: 0px 0px 20px #000000
+            width: 75%
+            height: 35%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            a
+                text-decoration: none
+                padding-top: 5px
+                color: red
+                font-family: forum
+                font-size: 22px
+                text-transform: uppercase
+                text-align: center
+                text-shadow: 0px 0px 4px #ff0000
+                transition: ease 0.4s
+                justify-content: center
+                padding-top: 4px
+                padding-bottom: 4px
+            #pressModal
+                display: block

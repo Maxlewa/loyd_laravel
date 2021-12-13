@@ -1,8 +1,9 @@
-@include('partial.nav')
+{{-- @include('partial.nav')
 
 @extends('layouts.index')
 
-@section('content')
+@section('content') --}}
+<video playsinline autoplay muted loop id="bgvid" src={{asset('video/tvstatic2.mp4')}}></video>
 <div class="container carouselBox">
 
     <div id="carouselExampleCaptions" class="carousel slide mt-4 carouselMain" data-ride="carousel" data-interval="false">
@@ -59,6 +60,6 @@
     <p class="pLois text-center mt-4">All pictures by <a href="https://www.instagram.com/loisdenis/" target="_blank">Loïs Denis</a></p>
     
 </div>
-@endsection
+{{-- @endsection
 
-@include('partial.footer')
+@include('partial.footer') --}}

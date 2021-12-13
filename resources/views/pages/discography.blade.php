@@ -1,13 +1,12 @@
-@include('partial.nav')
+<div class="discographyBox jumptarget" id="music">
 
-@extends('layouts.index')
-
-@section('content')
-    <video playsinline autoplay muted loop id="bgvid" src={{asset('video/tvstatic.mp4')}}></video>
-    <div class="text-center divTitre mt-4">
-        <h1 class="titreDisco mb-3">LISTEN</h1>
+    {{-- Title --}}
+    <div class="text-center divTitre">
+        <h1 class="titreDisco mb-3">MUSIC</h1>
         <div class="whiteLine"></div>
     </div>
+
+    {{-- ALBUMS --}}
     {{-- <div class="container albumsDiv mt-2">
         <div class="row">
             <div class="col-6 text-center albumCol">
@@ -36,12 +35,24 @@
             </div>
         </div>
     </div> --}}
+
+    {{-- Spotify PLAYER --}}
     <div class="text-center mt-5 divSpotifyP">
-        <iframe src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="800" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="spotifyDesktop" src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="800" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="spotifyMobile" src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="spotifyIpad" src="https://open.spotify.com/embed/artist/6nTLSLkxAQp1F8L0VFvCpR" width="600" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
-    <div class="text-center mb-5 divSpotifyF mt-5">
+
+    {{-- Spotify FOLLOW button --}}
+    <div class="text-center mb-5 divSpotifyF">
         <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6nTLSLkxAQp1F8L0VFvCpR?si=mpDTp8A3TpyYGYKiBUo0ig&size=detail&theme=dark" width="213" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
     </div>
-@endsection
 
-@include('partial.footer')
+    {{-- Apple Music button --}}
+    <div class="text-center divApple mt-5">
+        <a href="https://music.apple.com/fr/artist/l%C3%B8yd/1334208192" target="_blank">
+            <img src={{asset('img/listenonapplemusic2.png')}} alt="...">
+        </a>
+    </div>
+    
+</div>

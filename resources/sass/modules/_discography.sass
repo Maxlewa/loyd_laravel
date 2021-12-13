@@ -1,12 +1,13 @@
 .divTitre
     font-family: forum
     z-index: -1
+    padding-top: 25px
     .titreDisco
-        color: white  
+        color: white
     .whiteLine
         width: 100%
-        height: 1px
-        background: linear-gradient(to left, #000000 20%, #ebf8e1, #000000 80%)
+        height: 2px
+        background: linear-gradient(to left, #00000000 20%, #d60000, #00000000 80%)
 
 .albumsDiv
     z-index: -3
@@ -46,33 +47,94 @@
                     border-color: #949393
                     padding-top: 8px
                 button:hover
-                    // background-color: #cecece
                     color: red
-                    // padding-left: 30px
-                    // padding-right: 30px
                     transition: 0.3s
                     border-color: red
                     box-shadow: 0px 0px 20px #ff00005b
 
 .miniDiv:hover
     background-color: #222222
-    // outline: solid 3px white
-    // box-shadow: 0px 0px 30px #ffffff48
     transition: 0.5s
     outline: solid 3px #363636
 
 .divSpotifyP
-    margin-bottom: 30px
-    iframe
-        outline: solid 3px #999999
-        // box-shadow: 0px 0px 20px
+    margin-bottom: 40px
+    transition: 1s
+    .spotifyDesktop
         transition: 0.3s
-    iframe:hover
-        outline: solid 3px red
+    .spotifyDesktop:hover
+        outline: solid 2px red
         transition: 0.3s
         box-shadow: 0px 0px 20px #ff0000a4
+    .spotifyMobile
+        display: none
+    .spotifyIpad
+        display: none
 
+.divSpotifyF
+    margin-top: 60px
 
+.divApple
+    margin-bottom: 60px
+    a
+        img
+            width: 160px !important
+            filter: invert(100%)
+
+.discographyBox
+    margin-left: 105px
+    margin-top: 50px
+
+// IPHONE TO IPAD
+@media screen and (min-width: 300px) and (max-width: 768px)
+    .divTitre
+        padding-top: 15px
+        .titreDisco
+            font-size: 22px
+    .discographyBox
+        margin-left: 0px
+    .jumptarget::before
+        content: ""
+        display: block
+        height: 90px
+        margin: -90px 0 0
+    .divSpotifyP
+        .spotifyDesktop
+            display: none
+        .spotifyMobile
+            display: block !important
+            margin: 0 auto
+    .divApple
+        margin-bottom: 25px
+    .discographyBox
+        margin-top: 25px
+
+// IPAD & BIGGER
+@media screen and (min-width: 768px) and (max-width: 1024px)
+    .divTitre
+        padding-top: 15px
+        .titreDisco
+            font-size: 22px
+    .discographyBox
+        margin-left: 0px
+    .jumptarget::before
+        content: ""
+        display: block
+        height: 90px
+        margin: -90px 0 0
+    .divSpotifyP
+        .spotifyDesktop
+            display: none
+        .spotifyMobile
+            display: none !important
+            margin: 0 auto
+        .spotifyIpad
+            display: block
+            margin: 0 auto
+    .divApple
+        margin-bottom: 25px
+    .discographyBox
+        margin-top: 25px
 
 
     

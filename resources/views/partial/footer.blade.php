@@ -1,4 +1,3 @@
 <footer>
-    {{-- <img src="" alt=""> --}}
-    <p>Copyright ©️ Løyd, 2021 - All rights reserved.</p>
+    <p>Website ©️ Løyd - Pictures ©️ Loïs Denis - All rights reserved.</p>
 </footer>

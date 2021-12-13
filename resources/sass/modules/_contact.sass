@@ -2,6 +2,7 @@
     font-family: forum
     .divInfo
         color: #ffffff7a
+        margin-top: 30px
     video
         height: 50vh
     .formContact
@@ -27,3 +28,33 @@
 .joinBtn:hover
     background-color: red !important
     color: black !important
+
+// IPHONE & IPAD
+@media screen and (min-width: 300px) and (max-width: 769px)
+    .divVideoContact
+        font-family: forum
+        .divInfo
+            padding-left: 8px
+            padding-right: 8px
+        video
+            display: none
+        .formContact
+            width: 70%
+        .divContactP
+            padding-left: 8px
+            padding-right: 8px
+
+// IPAD PRO
+@media screen and (min-width: 770px) and (max-width: 1025px)
+    .divVideoContact
+        font-family: forum
+        .divInfo
+            padding-left: 8px
+            padding-right: 8px
+        video
+            height: 20vh
+        .formContact
+            width: 70%
+        .divContactP
+            padding-left: 8px
+            padding-right: 8px

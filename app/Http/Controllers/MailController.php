@@ -14,6 +14,6 @@ class MailController extends Controller
         $mails = new Mail();
         $mails->email = $request->email;
         $mails->save();
-        return redirect('/contact');
+        return redirect('/')->with('success', 'Your e-mail adress has been sent');
     }
 }

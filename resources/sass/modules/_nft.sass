@@ -1,34 +1,24 @@
+.nftBox
+    padding-left: 105px
+    .nftZora
+        margin-bottom: 50px !important
+        iframe
+            transition: 0.3s
+        iframe:hover
+            outline: solid 2px red
+            transition: 0.3s
+            box-shadow: 0px 0px 20px #ff0000a4
 
-    
-.divVideoNft
-    video
-        width: 100%
-        border: solid 3px #999999
-        transition: 0.3s
-        // box-shadow: 0px 0px 20px #ffffff5b
-        // box-shadow: 0 0 30px 6px #ffffff17
-    video:hover
-        border: solid 3px red
-        transition: 0.3s
-        box-shadow: 0px 0px 20px #ff0000a4
-.divRightNft
-    color: white
-    width: 50%
-    h1
-        text-align: right
-        font-family: garamond
-        font-size: 40px
-    p
-        text-align: right
-        font-size: 18px
-        // font-family: poppins-medium
-        font-family: forum
-        margin-bottom: 12px
-        a
-            text-decoration: none
-            color: white
-            transition: 0.4s ease
-        a:hover
-            color: red
-            transition: 0.4s ease
-            text-shadow: 0px 6px 5px #ff0000
+// IPHONE & IPAD
+@media screen and (min-width: 300px) and (max-width: 769px)
+    .nftBox
+        padding-left: 0px
+        .nftZora
+            max-width: 340px !important
+
+// IPAD PRO
+@media screen and (min-width: 770px) and (max-width: 1025px)
+    .nftBox
+        padding-left: 0px
+        .nftZora
+            max-width: 700px !important

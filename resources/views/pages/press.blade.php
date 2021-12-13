@@ -1,12 +1,13 @@
-@include('partial.nav')
+<div class="completeDiv jumptarget" id="press">
 
-@extends('layouts.index')
+    {{-- Title --}}
+    <div class="text-center divTitre">
+        <h1 class="titreDisco mb-3">PRESS</h1>
+        <div class="whiteLine"></div>
+    </div>
 
-@section('content')
-
-<div class="completeDiv">
-
-    <div class="quatreDiv">
+    {{-- Row 1 --}}
+    <div class="quatreDiv mt-5">
         <div>
             <h2>« Le Bruxellois fait sensation ! »</h2>
             <h3><a href="https://www.rtbf.be/emission/decibels/detail_decouvrez-l-yd-le-bruxellois-qui-fait-sensation?id=10522183" target="_blank">Tipik</a></h3>
@@ -25,6 +26,7 @@
         </div>
     </div>
     
+    {{-- Row 2 --}}
     <div class="quatreDiv">
         <div>
             <h2>« Rap, électro, nu metal, la musique de Løyd est indescriptible »</h2>
@@ -45,7 +47,3 @@
     </div>
     
 </div>
-
-@endsection
-
-@include('partial.footer')

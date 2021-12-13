@@ -1,25 +1,42 @@
 footer
-    text-align: center
-    // background-color: black
-    padding-top: 15px
-    padding-bottom: 10px
-    // border-top: solid 2px
-    // border-image: linear-gradient(45deg, #ffffff, #ff0000 55%) 1
     position: absolute
     bottom: 0
+    text-align: center
+    padding-top: 15px
+    padding-bottom: 10px
+    padding-left: 105px
     width: 100%
     opacity: 0.9
+    z-index: 2001
     p
-        color: white
+        color: red
+        text-shadow: 0px 0px 4px #ff0000
         font-size: 16px
-        // font-family: Courier New, Courier, monospace
         font-family: poppins-medium
         font-family: forum
         font-size: 18px
-        // font-size: 12px
-        // text-transform: uppercase
         padding-top: 4px
-        // text-shadow: 0px 2px 9px #ffffff
 
-// footer:hover
-//     border-image: linear-gradient(45deg, #ff0000, #ffffff 55%) 1
+// IPHONE
+@media screen and (min-width: 300px) and (max-width: 768px)
+    footer
+        padding-left: 0px
+        padding-bottom: 5px
+        p
+            font-size: 12px
+
+// IPAD
+@media screen and (min-width: 768px) and (max-width: 769px)
+    footer
+        padding-left: 0px
+        padding-bottom: 5px
+        p
+            font-size: 14px
+
+// IPAD PRO
+@media screen and (min-width: 770px) and (max-width: 1025px)
+    footer
+        padding-left: 0px
+        padding-bottom: 5px
+        p
+            font-size: 18px

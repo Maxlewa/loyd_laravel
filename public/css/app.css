@@ -14647,106 +14647,417 @@ h3 {
     border-color: #dee2e6;
   }
 }
-nav {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  top: 0;
-  opacity: 0.9;
-  transition: border-image opacity 1s;
-  transition: border-image opacity 1s, -o-border-image opacity 1s;
-  z-index: 10;
-  text-align: center;
-}
-nav .divNavLeft {
+.navDesktop {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  width: 37%;
-  font-size: 16px;
-  text-align: center;
-  margin: auto;
+  height: 100vh;
+  margin: 0;
 }
-nav .divNavLeft a {
-  text-decoration: none;
-  padding-top: 3px;
-  color: white;
+.navDesktop .navLeft {
+  width: 35px;
+  background-color: black;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  display: table;
+}
+.navDesktop .navLeft h3 {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  color: red;
+  text-align: center;
+  transform: rotate(270deg);
   font-family: forum;
   font-size: 18px;
-  text-transform: uppercase;
-  transition: ease 0.4s;
+  text-shadow: 0px 0px 4px #ff0000;
 }
-nav .divNavLeft a:hover {
+.navDesktop .navCenter {
+  width: 35px;
+  background-color: red;
+}
+.navDesktop .navCenter .navSocial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 250px;
+  padding-top: 7px;
+}
+.navDesktop .navCenter .navSocial a {
+  text-decoration: none;
+  padding-top: 5px;
+  color: black;
+  font-family: forum;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: ease 0.4s;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.navDesktop .navCenter .navSocial a:hover {
+  color: white;
+  text-shadow: 0px 0px 4px #b3b3b3;
+}
+.navDesktop .navRight {
+  width: 35px;
+  background-color: black;
+  box-shadow: 2px 0px 0px 0px white;
+  text-align: center;
+}
+.navDesktop .navRight .divMenu {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 35px;
+}
+.navDesktop .navRight .divMenu a {
+  text-decoration: none;
+  color: white;
+  font-family: forum;
+  transition: ease 0.4s;
+  text-align: center;
+  font-size: 19px;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  width: 33px;
+  riting-mode: tb;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 4px;
+}
+.navDesktop .navRight .divMenu a:hover {
   color: red;
   text-decoration: none !important;
-  transition: ease 0.4s;
-  text-shadow: 0px 6px 5px #ff0000;
-}
-nav .divNavRight {
-  width: 17%;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 12px;
-}
-nav .divNavRight i {
-  color: white;
-  transition: ease 0.4s;
-}
-nav .divNavRight i:hover {
-  color: red;
-  transition: ease 0.4s;
-  text-shadow: 0px 0px 5px #ff0000;
+  text-shadow: 0px 0px 4px #ff0000;
 }
 
-.divVideoNft video {
-  width: 100%;
-  border: solid 3px #999999;
+.navMobile {
+  display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: block !important;
+    width: 100%;
+    border-bottom: red solid 2px;
+    background-color: black;
+    z-index: 3000;
+  }
+  .navMobile .navMobileIn {
+    text-align: center;
+    color: red;
+    font-family: forum;
+    margin-top: 10px;
+  }
+  .navMobile .navMobileIn button {
+    margin: auto;
+    background: none;
+    border: none;
+    color: red;
+    text-align: center;
+    font-size: 22px !important;
+  }
+  .navMobile .navMobileSocial {
+    text-align: center;
+  }
+  .navMobile .navMobileSocial a {
+    text-decoration: none;
+    color: white;
+    font-family: forum;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    padding-top: 45px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal .modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .modal .modal-content a {
+    text-decoration: none;
+    padding-top: 5px;
+    color: red;
+    font-family: forum;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 4px #ff0000;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .modal .modal-content #pressModal {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: block !important;
+    width: 100%;
+    border-bottom: red solid 2px;
+    background-color: black;
+    z-index: 3000;
+  }
+  .navMobile .navMobileIn {
+    text-align: center;
+    color: red;
+    font-family: forum;
+    margin-top: 10px;
+  }
+  .navMobile .navMobileIn button {
+    margin: auto;
+    background: none;
+    border: none;
+    color: red;
+    text-align: center;
+    font-size: 22px !important;
+  }
+  .navMobile .navMobileSocial {
+    text-align: center;
+  }
+  .navMobile .navMobileSocial a {
+    text-decoration: none;
+    color: white;
+    font-family: forum;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    padding-top: 45px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal .modal-content {
+    background-color: #000000;
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    width: 75%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .modal .modal-content a {
+    text-decoration: none;
+    padding-top: 5px;
+    color: red;
+    font-family: forum;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 4px #ff0000;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .modal .modal-content #pressModal {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: block !important;
+    width: 100%;
+    border-bottom: red solid 2px;
+    background-color: black;
+    z-index: 3000;
+  }
+  .navMobile .navMobileIn {
+    text-align: center;
+    color: red;
+    font-family: forum;
+    margin-top: 10px;
+  }
+  .navMobile .navMobileIn button {
+    margin: auto;
+    background: none;
+    border: none;
+    color: red;
+    text-align: center;
+    font-size: 22px !important;
+  }
+  .navMobile .navMobileSocial {
+    text-align: center;
+  }
+  .navMobile .navMobileSocial a {
+    text-decoration: none;
+    color: white;
+    font-family: forum;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    padding-top: 45px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal .modal-content {
+    background-color: #000000;
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    width: 75%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .modal .modal-content a {
+    text-decoration: none;
+    padding-top: 5px;
+    color: red;
+    font-family: forum;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 4px #ff0000;
+    transition: ease 0.4s;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .modal .modal-content #pressModal {
+    display: block;
+  }
+}
+.nftBox {
+  padding-left: 105px;
+}
+.nftBox .nftZora {
+  margin-bottom: 50px !important;
+}
+.nftBox .nftZora iframe {
   transition: 0.3s;
 }
-.divVideoNft video:hover {
-  border: solid 3px red;
+.nftBox .nftZora iframe:hover {
+  outline: solid 2px red;
   transition: 0.3s;
   box-shadow: 0px 0px 20px #ff0000a4;
 }
 
-.divRightNft {
-  color: white;
-  width: 50%;
+@media screen and (min-width: 300px) and (max-width: 769px) {
+  .nftBox {
+    padding-left: 0px;
+  }
+  .nftBox .nftZora {
+    max-width: 340px !important;
+  }
 }
-.divRightNft h1 {
-  text-align: right;
-  font-family: garamond;
-  font-size: 40px;
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .nftBox {
+    padding-left: 0px;
+  }
+  .nftBox .nftZora {
+    max-width: 700px !important;
+  }
 }
-.divRightNft p {
-  text-align: right;
-  font-size: 18px;
-  font-family: forum;
-  margin-bottom: 12px;
-}
-.divRightNft p a {
-  text-decoration: none;
-  color: white;
-  transition: 0.4s ease;
-}
-.divRightNft p a:hover {
-  color: red;
-  transition: 0.4s ease;
-  text-shadow: 0px 6px 5px #ff0000;
-}
-
 footer {
+  position: absolute;
+  bottom: 0;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 10px;
-  position: absolute;
-  bottom: 0;
+  padding-left: 105px;
   width: 100%;
   opacity: 0.9;
+  z-index: 2001;
 }
 footer p {
-  color: white;
+  color: red;
+  text-shadow: 0px 0px 4px #ff0000;
   font-size: 16px;
   font-family: poppins-medium;
   font-family: forum;
@@ -14754,20 +15065,60 @@ footer p {
   padding-top: 4px;
 }
 
-.divTourBox {
-  color: white !important;
-  border: solid 2px white;
-  box-shadow: 0px 0px 20px #ffffff5b;
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  footer {
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+  footer p {
+    font-size: 12px;
+  }
 }
-.divTourBox a {
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  footer {
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  footer {
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+.divTour .divTourBox {
+  margin: auto;
+  width: 70vw !important;
+  color: white !important;
+}
+.divTour .divTourBox:hover {
+  transition: 0.3s;
+}
+.divTour .divTourBox:hover a {
   font-family: forum;
 }
+.divTour .divTourBox:hover a:hover {
+  outline: solid 3px red;
+}
 
+@media screen and (min-width: 300px) and (max-width: 769px) {
+  .divTour .divTourBox {
+    margin: auto;
+    width: 90vw !important;
+  }
+}
 .divVideoContact {
   font-family: forum;
 }
 .divVideoContact .divInfo {
   color: #ffffff7a;
+  margin-top: 30px;
 }
 .divVideoContact video {
   height: 50vh;
@@ -14801,18 +15152,60 @@ footer p {
   color: black !important;
 }
 
+@media screen and (min-width: 300px) and (max-width: 769px) {
+  .divVideoContact {
+    font-family: forum;
+  }
+  .divVideoContact .divInfo {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .divVideoContact video {
+    display: none;
+  }
+  .divVideoContact .formContact {
+    width: 70%;
+  }
+  .divVideoContact .divContactP {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .divVideoContact {
+    font-family: forum;
+  }
+  .divVideoContact .divInfo {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .divVideoContact video {
+    height: 20vh;
+  }
+  .divVideoContact .formContact {
+    width: 70%;
+  }
+  .divVideoContact .divContactP {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
 .carouselBox {
-  width: 53% !important;
+  width: 56% !important;
   font-family: forum;
   font-size: 18px;
   margin-bottom: 70px;
 }
 .carouselBox .carouselMain {
-  border: solid 4px #999999;
-  box-shadow: 0px 0px 30px #ffffff54;
+  border: solid 3px #999999;
 }
 .carouselBox .carouselMain div div p {
   margin-bottom: 8px;
+}
+.carouselBox .carouselMain:hover {
+  border: solid 3px red;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px #ff0000a4;
 }
 
 .pLois {
@@ -14832,25 +15225,26 @@ footer p {
 
 .arrowC1 {
   font-size: 15px;
-  padding-top: 460px;
+  padding-top: 495px;
 }
 
 .arrowC2 {
   font-size: 15px;
-  padding-top: 460px;
+  padding-top: 495px;
 }
 
 .divTitre {
   font-family: forum;
   z-index: -1;
+  padding-top: 25px;
 }
 .divTitre .titreDisco {
   color: white;
 }
 .divTitre .whiteLine {
   width: 100%;
-  height: 1px;
-  background: linear-gradient(to left, #000000 20%, #ebf8e1, #000000 80%);
+  height: 2px;
+  background: linear-gradient(to left, #00000000 20%, #d60000, #00000000 80%);
 }
 
 .albumsDiv {
@@ -14911,23 +15305,120 @@ footer p {
 }
 
 .divSpotifyP {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  transition: 1s;
 }
-.divSpotifyP iframe {
-  outline: solid 3px #999999;
+.divSpotifyP .spotifyDesktop {
   transition: 0.3s;
 }
-.divSpotifyP iframe:hover {
-  outline: solid 3px red;
+.divSpotifyP .spotifyDesktop:hover {
+  outline: solid 2px red;
   transition: 0.3s;
   box-shadow: 0px 0px 20px #ff0000a4;
 }
+.divSpotifyP .spotifyMobile {
+  display: none;
+}
+.divSpotifyP .spotifyIpad {
+  display: none;
+}
 
+.divSpotifyF {
+  margin-top: 60px;
+}
+
+.divApple {
+  margin-bottom: 60px;
+}
+.divApple a img {
+  width: 160px !important;
+  filter: invert(100%);
+}
+
+.discographyBox {
+  margin-left: 105px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .divTitre {
+    padding-top: 15px;
+  }
+  .divTitre .titreDisco {
+    font-size: 22px;
+  }
+
+  .discographyBox {
+    margin-left: 0px;
+  }
+
+  .jumptarget::before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin: -90px 0 0;
+  }
+
+  .divSpotifyP .spotifyDesktop {
+    display: none;
+  }
+  .divSpotifyP .spotifyMobile {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .divApple {
+    margin-bottom: 25px;
+  }
+
+  .discographyBox {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .divTitre {
+    padding-top: 15px;
+  }
+  .divTitre .titreDisco {
+    font-size: 22px;
+  }
+
+  .discographyBox {
+    margin-left: 0px;
+  }
+
+  .jumptarget::before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin: -90px 0 0;
+  }
+
+  .divSpotifyP .spotifyDesktop {
+    display: none;
+  }
+  .divSpotifyP .spotifyMobile {
+    display: none !important;
+    margin: 0 auto;
+  }
+  .divSpotifyP .spotifyIpad {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .divApple {
+    margin-bottom: 25px;
+  }
+
+  .discographyBox {
+    margin-top: 25px;
+  }
+}
 #bgvid {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
-  max-height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -14935,16 +15426,148 @@ footer p {
   z-index: -30;
 }
 
-.divHome iframe {
-  border: solid 3px #999999;
+.divImgHuge {
+  padding-left: 112px;
+}
+.divImgHuge #imgHuge {
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+.divImgHuge #imgBis {
+  display: none;
+}
+
+.divHome {
+  margin-left: 105px;
+}
+.divHome .mainIframe {
   transition: 0.3s;
 }
-.divHome iframe:hover {
-  border: solid 3px red;
+.divHome .mainIframe:hover {
+  outline: solid 2px red;
   transition: 0.3s;
   box-shadow: 0px 0px 20px #ff0000a4;
 }
+.divHome .phoneIframe {
+  display: none;
+}
+.divHome .padIframe {
+  display: none;
+}
+.divHome .proIframe {
+  display: none;
+}
 
+.divImgEnd {
+  padding-left: 111px;
+}
+.divImgEnd #imgEnd {
+  border-top: solid 2px red;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .divImgHuge {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+  .divImgHuge #imgHuge {
+    display: none !important;
+  }
+  .divImgHuge #imgBis {
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px white;
+  }
+
+  .divHome {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .divHome .mainIframe {
+    display: none;
+  }
+  .divHome .phoneIframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .divImgEnd {
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .divImgHuge {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+  .divImgHuge #imgHuge {
+    display: none !important;
+  }
+  .divImgHuge #imgBis {
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px white;
+  }
+
+  .divHome {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .divHome .mainIframe {
+    display: none;
+  }
+  .divHome .phoneIframe {
+    display: none;
+    margin: 0 auto;
+  }
+  .divHome .padIframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .divImgEnd {
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .divImgHuge {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+  .divImgHuge #imgHuge {
+    display: none !important;
+  }
+  .divImgHuge #imgBis {
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px white;
+  }
+
+  .divHome {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .divHome .mainIframe {
+    display: none;
+  }
+  .divHome .phoneIframe {
+    display: none;
+  }
+  .divHome .padIframe {
+    display: none;
+  }
+  .divHome .proIframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .divImgEnd {
+    padding-left: 0px;
+  }
+}
 .bigDiv {
   margin: 0 0 0 0 auto;
   max-width: 100%;
@@ -15090,6 +15713,86 @@ footer p {
   text-shadow: 0px 6px 5px #ff0000;
 }
 
+@media screen and (min-width: 300px) and (max-width: 769px) {
+  .completeDiv {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .completeDiv {
+    display: block;
+  }
+  .completeDiv .quatreDiv {
+    width: 95%;
+  }
+  .completeDiv .quatreDiv div {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .completeDiv .quatreDiv div h2 {
+    font-size: 13px;
+  }
+}
+.validateSuccess {
+  position: absolute;
+  width: 30vw;
+  z-index: 2000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0.8%;
+  padding-left: 105px;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: fadeOut 3s linear;
+          animation: fadeOut 3s linear;
+}
+.validateSuccess h3 {
+  font-family: forum;
+  color: red;
+  text-shadow: 0px 0px 4px #ff0000;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .validateSuccess {
+    position: absolute;
+    width: 95vw;
+    top: 5%;
+    padding-left: 0px;
+  }
+  .validateSuccess h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .validateSuccess {
+    position: absolute;
+    width: 95vw;
+    top: 3.5%;
+    padding-left: 0px;
+  }
+  .validateSuccess h3 {
+    font-size: 24px;
+  }
+}
 html {
   min-height: 100%;
   position: relative;

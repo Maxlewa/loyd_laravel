@@ -27,6 +27,9 @@ class FrontController extends Controller
     public function gallery() {
         return view('pages.gallery');
     }
+    public function loydtv() {
+        return view('pages.loydtv');
+    }
     public function links() {
         return view('pages.links');
     }

@@ -11,3 +11,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+*.mp4
+*.mov
+/public/video./public/video/tvstatic2.mp4
+./public/video/LoydPNGVid.mov
+./.git/objects/67/87ac2ea0a97e0b40c50ff6819ef21e816f92d4
