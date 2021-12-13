@@ -12,6 +12,8 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
+README.md
+
 *.mp4
 *.mov
 /public/video./public/video/tvstatic2.mp4
