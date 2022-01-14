@@ -14,6 +14,7 @@
             <a href="https://twitter.com/LoydMusicBE" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://open.spotify.com/artist/6nTLSLkxAQp1F8L0VFvCpR?si=DUni8bEnSWG3Qv3QMJFfrw" target="_blank"><i class="fab fa-spotify"></i></a>
             <a href="https://music.apple.com/be/artist/l%C3%B8yd/1334208192?l=fr" target="_blank"><i class="fab fa-apple"></i></a>
+            <a href="https://audius.co/loyd" target="_blank"><img class="audiusLogo" src={{'./img/audiuslogo.png'}} alt=""></a>
             <a href="https://www.youtube.com/channel/UCxhkP9IgusYDaQU5dW-w-fQ" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://bit.ly/3tM84Hn" target="_blank"><i class="fab fa-tiktok"></i></a>
             <a href="mailto:loydmusic@outlook.com"><i class="fas fa-envelope"></i></a>
@@ -51,9 +52,11 @@
         <a href="https://twitter.com/LoydMusicBE" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://open.spotify.com/artist/6nTLSLkxAQp1F8L0VFvCpR?si=DUni8bEnSWG3Qv3QMJFfrw" target="_blank"><i class="fab fa-spotify"></i></a>
         <a href="https://music.apple.com/be/artist/l%C3%B8yd/1334208192?l=fr" target="_blank"><i class="fab fa-apple"></i></a>
+        <a href="https://audius.co/loyd" target="_blank"><img class="audiusLogoMobile" src={{'./img/audiuslogo.png'}} alt=""></a>
         <a href="https://www.youtube.com/channel/UCxhkP9IgusYDaQU5dW-w-fQ" target="_blank"><i class="fab fa-youtube"></i></a>
         <a href="https://bit.ly/3tM84Hn" target="_blank"><i class="fab fa-tiktok"></i></a>
         <a href="mailto:loydmusic@outlook.com"><i class="fas fa-envelope"></i></a>
+        
     </div>
 </div>
 

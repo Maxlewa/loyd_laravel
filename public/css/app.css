@@ -14700,6 +14700,15 @@ h3 {
   color: white;
   text-shadow: 0px 0px 4px #b3b3b3;
 }
+.navDesktop .navCenter .navSocial .audiusLogo {
+  width: 20px;
+  justify-content: center;
+  filter: invert(100%);
+  transition: ease 0.4s;
+}
+.navDesktop .navCenter .navSocial .audiusLogo:hover {
+  filter: invert(0%);
+}
 .navDesktop .navRight {
   width: 35px;
   background-color: black;
@@ -14789,6 +14798,12 @@ h3 {
     padding-bottom: 4px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .navMobile .navMobileSocial .audiusLogoMobile {
+    width: 15px !important;
+    justify-content: center;
+    transition: ease 0.4s;
+    padding-bottom: 7px;
   }
 
   .modal {
@@ -14880,6 +14895,12 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .navMobile .navMobileSocial .audiusLogoMobile {
+    width: 15px !important;
+    justify-content: center;
+    transition: ease 0.4s;
+    padding-bottom: 7px;
+  }
 
   .modal {
     display: none;
@@ -14969,6 +14990,12 @@ h3 {
     padding-bottom: 4px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .navMobile .navMobileSocial .audiusLogoMobile {
+    width: 15px !important;
+    justify-content: center;
+    transition: ease 0.4s;
+    padding-bottom: 7px;
   }
 
   .modal {
